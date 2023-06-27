@@ -1,0 +1,153 @@
+/* 변수 */
+:root {
+  --black: #000;
+  --dark: #191a20;
+  --primary: #3f4150;
+  --secondary: #8c8d96;
+  --tertiary: #b2b3b9;
+  --border: #e0e2e7;
+  --background: #f7f8fa;
+  --white: #fff;
+
+  --blue: #3da5f5;
+  --blue-dark: #3186c4;
+  --blue-light: #ecf6fe;
+
+  --red: #f86d7d;
+  --green: #22c58b;
+
+  --font-main: 'Noto Sans KR', sans-serif;
+
+  --font-size-16: 16px;
+}
+
+/* reset.css */
+* {
+  margin: 0;
+  font-family: var(--font-main);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-main);
+  font-size: var(--font-size-16);
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--primary);
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border: 0;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+button {
+  padding: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+/* 시작 */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+main-container {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.kovo-logo {
+  width: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  background-color: var(--green);
+}
+
+.explanation {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.goods-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.goods-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: var(--blue-dark);
+  border-radius: 10px;
+}
+
+.goods-img {
+  width: 100px;
+  height: 100px;
+}
+
+.goods-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  color: var(--background);
+  font-size: 13px;
+  background-color: var(--red);
+}
